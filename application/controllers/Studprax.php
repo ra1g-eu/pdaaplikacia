@@ -109,11 +109,11 @@ public function dtstudprax()
 
                $data[] = array(
                     $r->idstudentska_prax,
+                    $r->cele_meno,
                     $r->NazovFirmy,
                     $r->nazovprace,
                     $r->time_started,
                     $r->time_ended,
-                    $r->cele_meno,
                     $r->href='<a href="'.site_url('studprax?edit='.$r->idstudentska_prax).'" class="btn btn-primary btn-sm" role="button">Upraviť</a>
                     <a href="'.site_url('studprax?remove='.$r->idstudentska_prax).'" class="btn btn-danger btn-sm" role="button">Vymazať</a>'
                     );
